@@ -1,0 +1,209 @@
+/*Conectando mi html con el css*/
+body{
+    /*background-color: rgb(245, 245, 187);*/ /*Solo era una prueba*/
+    margin: 0; /*margen*/
+    padding: 0; /*margen hacia adentro*/
+    font-family: Arial, Helvetica, sans-serif; /*Fuente, tipo de letra*/ 
+    font-size: 13px; /*Tamaño de la fuente*/
+}
+
+/**********************************************/
+/**********************************************/
+/*******************NAVEGACION*****************/
+header{
+    /*background-color: aqua; /*Prueba para ver el header visualmente*/
+    width: 100%; /*Ancho de la cajita o header*/
+    height:100px ; /*Alto de la cajita*/
+}
+
+header nav{ /*Estoy entrando al Nav del Header*/
+    display: flex; /*Habilitador para usar "flex-end" y "flex-start"*/
+    /*Para mover los elementos a la derecha*/
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section{ /*Entrando al Nav que esta en Header y pongo "." porque estoy llamando a la clase que esta dentro del nav*/
+    /*background-color: aquamarine; /*Para ver que edito solamente la lista no ordenada*/
+    width: 250px;
+    height: auto;
+    /*Eliminando los puntitos*/
+    list-style: none;
+    display: flex; /*Se puso horizontalmente mi lista*/
+    justify-content: center; /*Lo centre en la cajita*/
+    align-items: center; /*Centrado verticalmente*/
+
+} 
+
+a{
+    text-decoration: none; /*Elimina la linea debajo del texto*/
+}
+
+nav .nav-right-section a { /*Entrando a las anclas de mi "nav-right-section" por orden de la estructura*/
+    color: rgb(0, 0, 0); /*Color de mis elementos de mis anclas*/
+    /*Creando espacio para cada una de las anclas (lista no ordenadsa)*/
+    margin-right: 20px; /*Margen derecho de los las anclas, como si cada elemento tuviera su propia cajita*/
+}
+
+/*Icono del menú*/
+nav .nav-right-section .menu{
+    /*Agregar iconos*/
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    /*Que la imagen este contenida en el elemento mas grande*/
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat; /*Esta propiedad es para que ya no se repita el icono*/
+}
+
+/*Imagen del usuariio*/
+nav .nav-right-section img{
+    /*Redondeando bordes*/
+    border-radius: 100%;
+    /*Cambiar tamaño de la imagen*/
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+}
+/***********************************************/
+/***********************************************/
+/****************** MAIN ***********************/
+main{
+    /*background-color: bisque; /*Para observar el espacio a editar*/
+    /*Agregar espacio entre Header y Main*/
+    margin-top: 120px;
+    text-align: center;
+}
+
+main .mainLogoGoogle{
+    /*background-color: blue; */
+    width: 530px;
+    margin: 0 auto; /*Me ayuda a centrar todo, gracias a los márgenes auntomáticos*/
+}
+
+main .mainLogoGoogle img{
+    height: 100px;
+}
+
+main .mainInput{
+    /*background-color: aquamarine; */
+    width: 530px;
+    margin: 0 auto;
+}
+
+main .mainInputContainer{
+    /*background-color: beige;*/
+    
+    /* ancho || borde-estilo || color */ 
+    border: 1px solid #dfe1e5; 
+    border-radius: 30px;
+    width: 525px; 
+}
+
+main .mainInput input{
+    width: 430px;
+    height: 25px;
+    border: none; /*Quitar el borde*/
+    outline:none; /*Quitar el borde del input-Container*/
+}
+
+main .mainInputContainer:hover{
+    /*Para ver el sombreado cada que selecciono la cajita del input-container*/
+    box-shadow: 1px 1px 1px rgb(215, 203, 203);
+}
+
+main .mainInput .searchIcon {
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    background-size: contain;
+    padding-left: 7%;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 35px;
+    margin-left: 10px;
+}
+
+main .mainInput .microIcon{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    background-size: contain;
+    padding-left: 10px;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+main .mainInput .cameraIcon{
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    background-size: contain;
+    padding-right: 10%;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+}
+
+main .Buttons{
+    padding-top: 30px;
+    
+}
+
+main .Buscar:hover{
+    /*Para ver el sombreado cada que selecciono la cajita del input-container*/
+    box-shadow: 1px 1px 1px rgb(215, 203, 203);
+}
+
+main .Buscar{
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 10px;
+    border-color: transparent;
+}
+
+main .Suerte:hover{
+    /*Para ver el sombreado cada que selecciono la cajita del input-container*/
+    box-shadow: 1px 1px 1px rgb(215, 203, 203);
+}
+main .Suerte{
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    padding: 10px;
+    /*margin-right: 10px;*/
+    border-color: transparent;
+}
+
+/**********************************************/
+/**********************************************/
+/******************* FOOTER *******************/
+
+footer{
+    background-color: #f2f2f2;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #868994;
+}
+
+footer .mexicoSection{
+    padding: auto;
+    padding-bottom: 12px;
+    padding-top: 7px;
+    list-style: none;
+    padding-left: 35px;
+    border-bottom: 1px solid #e3e4e7;
+}
+
+footer .downSectionInfo{
+    padding-bottom: 16px;
+    padding-top: 7px;
+    padding-left: 13px;
+    padding-right: 10px;
+}
+
+footer .footLeft{
+    list-style: none;
+    float: left;
+    padding-left: 27px;
+}
+
+footer .footRight{
+    list-style:none;
+    float: right;
+    padding-left: 27px;
+}
